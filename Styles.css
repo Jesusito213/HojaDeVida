@@ -1,0 +1,146 @@
+#grid-container {
+	font-family: sans-serif, Arial, Helvetica;
+	color: #545963;
+	display: grid;
+	box-shadow: 8px -8px 30px 1px rgba(0, 0, 0, 0.2);
+	grid-template-areas:
+		"header header header"
+		"main main main"
+		"section section aside";
+	margin: 50px 230px;
+}
+
+header {
+	display: grid;
+	grid-area: header;
+	grid-template-columns: 210px 550px 1fr;
+	background-color: #444c5c;
+	color: #f3f3f3;
+}
+
+img {
+	width: 200px;
+	height: 240px;
+}
+
+.nombre {
+	font-size: 18px;
+	padding: 3px;
+}
+
+header p {
+	font-size: 25px;
+}
+
+
+.nombre a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #9a9b9a;
+	display: block;
+	padding: 5px;
+}
+
+.nombre a:hover {
+	text-decoration: underline;
+	color: #f3f3f3;
+}
+
+.contactos {
+	width: 180px;
+}
+
+.otros-contactos {
+	display: grid;
+	grid-template-rows: repeat(3, 50px);
+	place-content: center;
+}
+
+.otros-contactos a {
+	color: #9a9b9a;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
+}
+
+.otros-contactos a:hover {
+	text-decoration: underline;
+	color: #f3f3f3;
+}
+
+main {
+	display: grid;
+	grid-area: main;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px 50px;
+	margin: 35px 50px;
+}
+
+main h2 {
+	margin-bottom: 0;
+	border-bottom:solid 1.2px #9a9b9a;
+}
+
+
+section {
+	display: grid;
+	grid-area: section;
+	grid-template-rows: 70px 45px 20px 100px 35px 70px;
+	margin: 35px 50px;
+}
+
+
+section h2 {
+  padding-bottom: 20px;
+	border-bottom:solid 1.2px #9a9b9a;
+}
+
+section h3 {
+	margin: 5px 0 ;
+}
+
+span {
+	color: #9a9b9a;
+}
+
+section ul {
+	display: grid;
+	grid-template-columns: 70px 100px 95px;
+	padding: 0;
+	place-items: center;
+	list-style: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+section li {
+	background-color: #545963;
+	padding: 5px;
+	border: 1px solid #545963;
+	border-radius: 20px;
+}
+
+aside {
+	margin: 55px 50px 35px 0;
+	grid-area: aside;
+	display: grid;
+	grid-template-rows: 70px 20px 150px 70px ;
+}
+
+aside h2 {
+	border-bottom: 2px solid #9a9b9a;
+}
+
+aside h3 {
+	margin: 0;
+}
+
+aside ul {
+	list-style: circle;
+	padding-left: 20px ;
+}
+
+aside li {
+	padding: 5px;
+}
+
