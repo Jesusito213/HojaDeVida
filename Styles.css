@@ -42,7 +42,7 @@ header p {
 }
 
 .nombre a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: #f3f3f3;
 }
 
@@ -59,12 +59,12 @@ header p {
 .otros-contactos a {
 	color: #9a9b9a;
 	text-decoration: none;
-	font-size: 20px;
-	padding: 15px;
+	font-size: 22px;
+	padding: 10px;
 }
 
 .otros-contactos a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: #f3f3f3;
 }
 
@@ -105,7 +105,7 @@ span {
 
 section ul {
 	display: grid;
-	grid-template-columns: 70px 100px 95px;
+	grid-template-columns: 70px 100px 95px 80px;
 	padding: 0;
 	place-items: center;
 	list-style: none;
@@ -121,7 +121,7 @@ section li {
 }
 
 aside {
-	margin: 55px 50px 35px 0;
+	margin: 55px 40px 35px 0;
 	grid-area: aside;
 	display: grid;
 	grid-template-rows: 70px 20px 150px 70px ;
